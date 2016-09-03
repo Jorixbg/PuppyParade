@@ -1,0 +1,4 @@
+*.classpath
+Trunk/.project
+*.prefs
+Trunk/.settings/org.eclipse.wst.common.component
