@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ include file="header.jsp"%>
+<%@ include file="/pages/header.jsp"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <c:set var="language"
 	value="${not empty param.language ? param.language : not empty language ? language : pageContext.request.locale}"
@@ -19,9 +19,9 @@
 						key="puppyparade.title" /></a>
 			</div>
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="/"><fmt:message
-							key="puppyparade.home" /></a></li>
-				<li><a href="about"><fmt:message key="puppyparade.about" /></a></li>
+				<li><a href="home"><fmt:message key="puppyparade.home" /></a></li>
+				<li class="active"><a href="about"><fmt:message
+							key="puppyparade.about" /></a></li>
 			</ul>
 			<div class="text-right">
 				<form>
@@ -31,36 +31,43 @@
 					</select>
 				</form>
 			</div>
+			<!-- <div id="status" class="text-right">
+				<fb:login-button scope="public_profile,email"
+					onlogin="checkLoginState();">
+				</fb:login-button>
+			</div> -->
 		</div>
 	</nav>
 	<div class="container-fluid" role="main">
-		<!-- <div class="logo-center">
-		<img class="logo-bg" src="<c:url value="/resources/images/logo_bg.jpg" />">
-	</div> -->
-		<hr>
-		<div id="searchPane" class="jumbotron twm">
+		<!-- <div class="jumbotron twm">
 			<div id="searchBar" class="container text-center">
-			
-			<span id="centralText">Puppy Parade</span>
-
-
+				<h1>
+					<fmt:message key="puppyparade.title" />
+				</h1>
 			</div>
-		</div>
-<%-- 		<div class="content row">
+		</div> -->
+		<div class="content row">
 			<div class="col-md-2 col-sm-2">
-				<!-- Sidebar  -->
-				<%@ include file="sidebar.jsp"%>
-
+				<%-- <%@ include file="/pages/sidebar.jsp"%> --%>
 			</div>
-			<div class="col-md-8 col-sm-8"
-				style="height: 700px; !important"></div>
+			<div class="col-md-8 col-sm-8">
+				<%-- <div class="logo-center">
+					<img class="logo-bg"
+						src="<c:url value="/resources/images/logo_bg.jpg" />">
+				</div> --%>
+				<p class="content-paragraph">
+				<h4>
+					<fmt:message key="puppyparade.about.content" />
+				</h4>
+				</p>
+			</div>
 			<div class="col-md-2 col-sm-2"></div>
 
-		</div> --%>
+
+		</div>
 
 
 	</div>
-	<%@ include file="footer.jsp"%>
-
+	<%@ include file="/pages/footer.jsp"%>
 </body>
 </html>

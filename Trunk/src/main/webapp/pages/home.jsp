@@ -15,7 +15,7 @@
 	<nav role="navigation" class="navbar navbar-default navbar-static-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="/"><fmt:message
+				<a class="navbar-brand" href="home"><fmt:message
 						key="puppyparade.title" /></a>
 			</div>
 			<ul class="nav navbar-nav">
@@ -40,6 +40,9 @@
 		<hr>
 		<div id="searchPane" class="jumbotron twm">
 			<div id="searchBar" class="container text-center">
+			
+			<span id="centralText">Puppy Parade</span>
+
 
 			</div>
 		</div>

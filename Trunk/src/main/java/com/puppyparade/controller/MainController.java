@@ -21,14 +21,14 @@ public class MainController {
 		return model;
 	}
 
-//	@RequestMapping(value = "/about", method = { RequestMethod.POST, RequestMethod.GET })
-//	// @RequestMapping(method = RequestMethod.GET)
-//	public ModelAndView helloAbout() {
-//
-//		ModelAndView model = new ModelAndView("about");
-//		model.addObject("name", "About");
+	@RequestMapping(value = "/about", method = { RequestMethod.POST, RequestMethod.GET })
+	// @RequestMapping(method = RequestMethod.GET)
+	public ModelAndView helloAbout() {
+
+		ModelAndView model = new ModelAndView("about");
+		model.addObject("name", "About");
 //		model.addObject("user", getPrincipal());
-//
-//		return model;
-//	}
+
+		return model;
+	}
 }

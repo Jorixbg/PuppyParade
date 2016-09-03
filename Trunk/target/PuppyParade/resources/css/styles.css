@@ -24,6 +24,17 @@ input {
 	height: auto;
 }
 
+#centralText{
+	
+font-family: Cursive;
+font-size:58px;
+font-style: normal
+;font-weight: bold;
+text-decoration: none;
+text-transform: none;
+color: #FFFFFF;"
+}
+
 .logo-center {
 	position: relative;
 	left: 50% !important;

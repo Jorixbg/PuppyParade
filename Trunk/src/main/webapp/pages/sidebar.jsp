@@ -1,7 +1,7 @@
-<div class="jumbotron sidebar-stepapp">
+<div class="jumbotron sidebar-puppyparade">
 	<ul class="sidebar-nav">
 		<li class="sidebar-brand"><a href="#"> <fmt:message
-					key="stepapp.profile" />
+					key="puppyparade.profile" />
 		</a></li>
 		<div id="profile">
 			<c:choose>
@@ -14,9 +14,9 @@
 						<p style="font-size: 14px !important;">
 							<fmt:message key="not.logged.in" />
 							<br> <a href="javascript: void(0)" onclick="showLoginWindow()"><fmt:message
-									key="stepapp.login" /></a><br> <a
+									key="puppyparade.login" /></a><br> <a
 								href="<c:url value="/signup" />"><fmt:message
-									key="stepapp.signup" /></a>
+									key="puppyparade.signup" /></a>
 						</p>
 					</div>
 					<div id="loginForm">
